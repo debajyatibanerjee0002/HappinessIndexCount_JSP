@@ -6,6 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <link rel="stylesheet" href="../css/bootstrap.min.css">
 <link rel="stylesheet" href="../style/registration_sa.css"></link>
+<link rel="stylesheet" href="../style/registration_sa_2.css"></link>
 <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lobster&family=Prompt:ital@1&display=swap" rel="stylesheet">
 <title>Select Role Login</title>
 <style>
@@ -14,17 +15,21 @@
 		box-sizing:border-box;
 		background-color: #CDF2CA;
 	}
+	.banner{
+		background:url("../../images/pic3.jpeg");
+		background-position:center;
+		background-size:cover;
+	}
 	.container{
-		height:100vh;
-		width:100%;
-		display:flex;
-		align-items:center;
-		justify-content:center;
+		top:35vh;
+		left:50vh;
+		box-shadow: 30px 26px 16px rgba(0,0,0,0.3);
 	}
 	.form-check{
 		margin:10px;
 	}
 	.btn{
+		margin:20px 0 40px 0;
     	width: 100%;
     	background-color: #1C6DD0 ;
     	color: white;
@@ -39,6 +44,7 @@
 </style>
 </head>
 <body>
+	<div class="banner"></div>
 	<div class="container">
 		<div class="form-style-2">
 			<form action="selectRoleCheck.jsp" method="post">
@@ -49,11 +55,11 @@
 					<option value="../S_P/login_sp.jsp">Teacher</option>
 					<option value="../S_P/login_sp.jsp">Parent</option>
 					<option value="../S_P/login_sp.jsp">Student</option>
-					<option value="../S_P/login_sp.jsp">Others</option>
+					<option value="../OTHERS/login_others.jsp">Others</option>
 					<option selected hidden>- Select One -</option>
 				</select>
 			</label>
-			<input type="submit" value="Submit" class="btn"/>
+			<input type="submit" value="Submit" style="margin-bottom:20px; margin-left:auto; border-radius:30px; width:100%"/>
 			</form>
 		</div>
 	</div>

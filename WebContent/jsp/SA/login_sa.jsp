@@ -6,29 +6,34 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Login SA</title>
 <link rel="stylesheet" href="../style/registration_sa.css">
+<link rel="stylesheet" href="../style/registration_sa_2.css">
 <style>
 	.container{
-		height:100vh;
-		width:100%;
-		display:flex;
-		align-items: center;
-		justify-content:center;
+		top:30vh;
+		left:50vh;
 	}
 	a{
 		cursor:pointer;
 	}
+	.banner{
+		background:url("../../images/pic8.jpg");
+		background-position:center;
+		background-size:cover;
+	}
+	
 </style>
 </head>
-<body bgcolor="#D6E5FA">
+<body >
+	<div class="banner"></div>
 	<div class="container">
 		<div class="form-style-2">
 			<div class="form-style-2-heading">Please Enter Your Login Details</div>
-			<form action="registrationProcess_Others.jsp" method="post">
-				<label for="field1"><span>Email ID </span><input type="email" class="input-field" name="name" value="" required/></label>
+			<form action="loginProcess_sa.jsp" method="post">
+				<label for="field1"><span>Email ID </span><input type="email" class="input-field" name="emailID" value="" required/></label>
 				
 				<label for="field4"><span>Password </span><input type="password" class="input-field" name="password" value="" required/></label>
-				<a href="#"><span>Forgot Password ? </span></a>
-				<label><span> </span><input type="submit" value="LOGIN" style="margin-bottom:20px; margin-left:auto"/></label>
+				<a href="../Forgot_Password/forgot_password_sa.jsp"><span>Forgot Password ? </span></a>
+				<input type="submit" value="Submit" style="margin-bottom:20px; margin-top:7px; border-radius:30px; width:100%"/>
 			</form>
 		</div>
 	</div>

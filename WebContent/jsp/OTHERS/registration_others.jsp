@@ -6,35 +6,50 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Registration Others</title>
 <link rel="stylesheet" href="../style/registration_sa.css">
+<link rel="stylesheet" href="../style/registration_sa_2.css">
 <style>
 	.container{
+		top:25vh;
+		left:50vh;
+	}
+	a{
+		cursor:pointer;
+	}
+	.banner{
+		background:url("../../images/pic4.jpg");
+		background-repeat:no-repeat;
 		height:100vh;
 		width:100%;
-		display:flex;
-		align-items: center;
-		justify-content:center;
+		background-position:center;
+		background-size:cover;
 	}
 </style>
 </head>
-<body bgcolor="#D6E5FA">
+<body>
+	<div class="banner"></div>
 	<div class="container">
 		<div class="form-style-2">
 			<div class="form-style-2-heading">Provide Your information</div>
 			<form action="registrationProcess_Others.jsp" method="post">
-				<label for="field1"><span>Name <span class="required">*</span></span><input type="text" class="input-field" name="name" value="" /></label>
+				<label for="field1">
+					<span>Name <span class="required">*</span></span>
+					<input type="text" class="input-field" name="name" value="" required/>
+				</label>
 				<label>
 					<span>Phone number <span class="required">*</span></span>
-					<input type="text" class="tel-number-field" name="tel_no_1" value="" maxlength="3" />
-					-
-					<input type="text" class="tel-number-field" name="tel_no_2" value="" maxlength="3"  />
-					-
-					<input type="text" class="tel-number-field" name="tel_no_2" value="" maxlength="4"  />
+					<input type="tel" class="input-field" name="phoneNo" value="" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required/>
 				</label>
 				
-				<label for="field4"><span>Password <span class="required">*</span></span><input type="password" class="input-field" name="password" value="" /></label>
-				<label for="field5"><span>Re-enter Password <span class="required">*</span></span><input type="password" class="input-field" name="RPassword" value="" /></label>
+				<label for="field4">
+					<span>Password <span class="required">*</span></span>
+					<input type="password" class="input-field" name="password" value="" required/>
+				</label>
+				<label for="field5">
+					<span>Re-enter Password <span class="required">*</span></span>
+					<input type="password" class="input-field" name="RPassword" value="" required/>
+				</label>
 				
-				<label><span> </span><input type="submit" value="Submit" style="margin-bottom:20px; margin-left:auto"/></label>
+				<input type="submit" value="Submit" style="margin-bottom:20px; margin-left:auto; border-radius:30px; width:100%"/>
 			</form>
 		</div>
 	</div>

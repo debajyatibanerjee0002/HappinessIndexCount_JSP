@@ -1,0 +1,83 @@
+body{
+    background-color: #F3E9DD;
+}
+
+.navbar{
+    max-height: 50px;
+}
+
+a.nav-link{
+    display: inline-block;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.blank{
+    padding-bottom: 8vh;
+}
+
+
+
+.card-text{
+    font-weight: 700;
+    font-size: large;
+    margin-top: 80px;
+}
+
+.card{
+
+    background-color: aliceblue;
+    width: 80%;
+    height: 80vh;
+    margin-left: 10%;
+    margin-top: 10vh;
+}
+
+.card-body{
+    display: inline-block;
+    margin-left: 16vw;
+    width: 100vh;
+    border-radius: 10px;
+}
+
+.progress{
+    margin-bottom: 30px;
+}
+
+.profile-overview{
+text-align: center;
+}
+
+.navbar-brand{
+    align-items: left;
+}
+
+.admin-card{
+    display: flex;
+    margin: 60;
+    text-align: center;
+    /* background-color: yellowgreen; */
+}
+
+.sa-profile-img{
+    max-height: 200;
+    max-width: 200;
+}
+.img-fluid {
+    max-width: 35%;
+    margin: auto;
+    display: block;
+}
+
+.img-thumbnail {
+    padding: 0.25rem;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    max-width: 100%;
+    height: auto;
+}
+.col-3{
+	align-self:center;
+}

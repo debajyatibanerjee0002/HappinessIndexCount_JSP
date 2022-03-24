@@ -5,40 +5,38 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Registration SP</title>
+<link rel="stylesheet" href="../css/bootstrap.min.css">
 <link rel="stylesheet" href="../style/registration_sa.css">
+<link rel="stylesheet" href="../style/registration_sa_2.css">
 <style>
-	.container{
-		height:100vh;
-		width:100%;
-		display:flex;
-		align-items: center;
-		justify-content:center;
+	.banner{
+		background:url("../../images/pic2.jpg");
 	}
 </style>
 </head>
-<body bgcolor="#D6E5FA">
-	<div class="container">
+<body>
+	
+	<div class="banner"></div>
+		<div class="container">
 		<div class="form-style-2">
 			<div class="form-style-2-heading">Provide Your information</div>
-			<form action="RegistrationProcess_sp.jsp" method="post">
-				<label for="field1"><span>Name <span class="required">*</span></span><input type="text" class="input-field" name="name" value="" /></label>
+			<form action="registrationProcess_sp.jsp" method="post">
+				<label for="field1"><span>Name <span class="required">*</span></span><input type="text" class="input-field" name="name" value="" required/></label>
 				<label>
-					<span>Phone No. <span class="required">*</span></span>
-					<input type="text" class="tel-number-field" name="tel_no_1" value="" maxlength="3" />
-					-
-					<input type="text" class="tel-number-field" name="tel_no_2" value="" maxlength="3"  />
-					-
-					<input type="text" class="tel-number-field" name="tel_no_2" value="" maxlength="4"  />
+					<span>Phone number <span class="required">*</span></span>
+					<input type="tel" class="input-field" name="phoneNo" value="" pattern="[0-9]{3}[0-9]{3}[0-9]{4}"/>
 				</label>
 				
-				<label for="field4"><span>Password <span class="required">*</span></span><input type="password" class="input-field" name="password" value="" /></label>
-				<label for="field5"><span>Re-enter Password <span class="required">*</span></span><input type="password" class="input-field" name="RPassword" value="" /></label>
-				<label for="field1"><span>School Name <span class="required">*</span></span><input type="text" class="input-field" name="schoolName" value="" /></label>
-				<label for="field2"><span>School Code <span class="required">*</span></span><input type="text" class="input-field" name="schoolCode" value="" /></label>
+				<label for="field4"><span>Password <span class="required">*</span></span><input type="password" class="input-field" name="password" value="" required/></label>
+				<label for="field5"><span>Re-enter Password <span class="required">*</span></span><input type="password" class="input-field" name="RPassword" value="" required/></label>
+				<label for="field1"><span>School Name <span class="required">*</span></span><input type="text" class="input-field" name="schoolName" value="" required/></label>
+				<label for="field2"><span>School Code <span class="required">*</span></span><input type="text" class="input-field" name="schoolCode" value="" required/></label>
 				
-				<label><span> </span><input type="submit" value="Submit" style="margin-bottom:20px; margin-left:auto"/></label>
+				<input type="submit" value="Submit" style="margin-bottom:20px; margin-left:auto; border-radius:30px; width:100%"/>
 			</form>
 		</div>
 	</div>
+	
+	
 </body>
 </html>

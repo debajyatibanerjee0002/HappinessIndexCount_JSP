@@ -10,12 +10,12 @@
 <style>
 	.banner{
 		background:url("../images/pic1.jpeg");
-		height:100vh;
 		width:100%;
-		background-position:center;
+		background-position:top;
 		background-size:cover;
 		z-index:-1;
 		filter:blur(3px);
+		background-repeat:no-repeat;
 	}
 	.color{
 		z-index:1;
@@ -63,7 +63,7 @@
 	<nav class="navbar" style="background-color: #e3f2fd;">
 	  <div class="container-fluid">
 	    <a class="navbar-brand">
-	    	<img src="../images/logo.png" width=15% height=15%>
+	    	<img src="../images/logo.png" width=20% height=20%>
 	    </a>
 	    <div class="d-flex">
 	    	<a href="./Control/select_role_login.jsp">
@@ -80,6 +80,7 @@
 		<div class="banner">
 			<div class="color"></div>
 		</div>
+	</div>
 		<div class="heading">
 			<h1>Why Happiness index for school students is important ?</h1>
 			<p>
@@ -99,7 +100,8 @@
 			<center><img src="../images/logo.png" alt="logo"></center>
 			<center><h2>Happiness Index Count</h2></center>
 		</div>
-	</div>
+		<jsp:include page="footer.jsp"></jsp:include>
+
 	
 
 	<script type="text/javascript" src="../js/bootstrap.min.js"></script>

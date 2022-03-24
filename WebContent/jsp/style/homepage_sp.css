@@ -1,0 +1,96 @@
+ body{
+    background-color: #F3E9DD;
+}
+
+.blank{
+    padding-bottom: 8vh;
+}
+
+.navbar{
+    height: 8vh;
+    position: sticky;
+    margin-bottom: 10px;
+}
+
+.post {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post-head{
+    display: flex;
+    flex-direction: row;
+}
+
+.post-ini{
+    display: flex;
+    flex-direction: column;
+}
+/* 
+.post-head{
+    height: 8rem;
+} */
+
+.account{
+    height: 5em;
+    width: auto;
+}
+
+.account-name{
+    margin-left: 10px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.account-address{
+    margin-left: 10px;
+    font-weight: 400;
+}
+
+.card{
+    display: flex;
+    width: 40%;
+    height: auto;
+    margin-bottom:20px
+}
+
+.card-body{
+    
+}
+
+.logo{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+}
+
+.image{
+    display: inline-block;
+}
+
+.heart{
+    color: red;
+    font-size: 300%;
+}
+
+.share{
+    color: blue;
+    font-size: 300%;
+}
+
+.dislike{
+    color: green;
+    font-size: 300%;
+}
+.c-body{
+	margin-bottom:10px;
+}
+
+.justify-content-center {
+    text-align: -webkit-center;
+}
+

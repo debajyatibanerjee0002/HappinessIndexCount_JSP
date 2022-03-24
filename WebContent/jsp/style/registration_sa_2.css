@@ -1,0 +1,75 @@
+	*{
+		margin:0;
+		padding:0;
+		box-sizing:border-box;
+	}
+
+	.container{
+	
+		width:45%;
+		display:flex;
+		align-items: center;
+		justify-content:center;
+		z-index:5;
+		background-color: #D6E5FA;
+		margin:auto;
+		position:absolute;
+		top:16vh;
+		left:50vh;
+		border-top-left-radius:70px;
+		border-bottom-right-radius:70px;
+		
+		box-shadow: 30px 26px 16px rgba(0,0,0,0.3);
+	}
+	.banner{
+		background:url("../../images/pic1.jpeg");
+		height:100vh;
+		width:100%;
+		background-position:center center;
+		background-size:cover;
+		z-index:-1;
+		filter:blur(3px);
+		background-repeat:no-repeat;
+	}
+	.color{
+		z-index:2;
+		height:100vh;
+		width:100%;
+		background-color:#0F0E0E;
+		opacity:0.5;
+	}
+	.heading h1{
+		z-index:2;
+		display:flex;
+		position:relative;
+		display:float;
+		margin-top:-45%;
+		color: white;
+		margin-left:30px;
+		font-size:2.1rem;
+		font-family: 'Alfa Slab One', cursive;
+	}
+	.heading p{
+		z-index:2;
+		position: relative;
+		margin: 30px;
+		font-family: 'Lobster', cursive;
+		color: white;
+	}
+	.heading img{
+		z-index:2;
+		position: relative;
+		width:15%;
+		height:15%
+	}
+	.heading h2{
+		z-index:2;
+		position: relative;
+		color: white;
+		font-size:2.1rem;
+		font-family: 'Alfa Slab One', cursive;
+		margin-top:20px;
+	}
+	.form-style-2-heading{
+	text-align:center;
+	}

@@ -17,7 +17,7 @@
 		int phoneNo = Integer.parseInt(request.getParameter("phoneNo"));
 		String password = request.getParameter("password");
 		
-		String query = "SELECT NAME FROM SP WHERE PH_NO=? AND PASSWORD=?";
+		String query = "SELECT NAME FROM OTHERS WHERE PH_NO=? AND PASSWORD=?";
 		psmt=con.prepareStatement(query);
 		
 		psmt.setInt(1, phoneNo);
@@ -29,11 +29,11 @@
 		{
 			String name = rs.getString("NAME");
 			session.setAttribute("name", name);
-			response.sendRedirect("../OTP/otp_sp.jsp");
+			response.sendRedirect("../OTP/otp_others.jsp");
 		}
 		else
 		{
-			response.sendRedirect("error_sp.jsp");
+			response.sendRedirect("error_others.jsp");
 		}
 		
 	}
