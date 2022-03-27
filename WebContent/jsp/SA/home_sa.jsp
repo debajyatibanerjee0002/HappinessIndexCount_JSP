@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1" import="java.sql.*"%>
+    pageEncoding="ISO-8859-1" import="java.sql.*" import="java.util.*"%>
     
  <% 
  	String schoolName = (String)session.getAttribute("schoolName");
@@ -86,7 +86,7 @@
                 <div class="col-8">
                       <h1><%=schoolName %></h1>
                       <p><%=schoolAddr %></p>
-                      <h3>Sat Mar 19 2022 22:57:08</h3>
+                      <h3><%= (new java.util.Date()).toLocaleString() %></h3>
                 </div>
               </div>
             </div>

@@ -34,7 +34,7 @@
 		}
 		else
 		{
-			response.sendRedirect("./error_sa.jsp");
+			response.sendRedirect("./forgot_password_sa.jsp");
 		}
 		
 		

@@ -29,6 +29,7 @@
 		{
 			String schoolName = rs.getString("S_NAME");
 			String schoolAddr = rs.getString("S_ADDR");
+			session.setAttribute("emailID", emailID);
 			session.setAttribute("schoolName", schoolName);
 			session.setAttribute("schoolAddr", schoolAddr);
 			response.sendRedirect("../OTP/otp_sa.jsp");
